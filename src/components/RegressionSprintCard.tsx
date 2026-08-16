@@ -11,7 +11,7 @@ export function RegressionSprintCard({
   additions: RegressionAdditionDoc[];
 }) {
   return (
-    <Card className="border-amber-400 bg-amber-50 dark:bg-amber-950">
+    <Card className="border-sprint-border bg-sprint text-sprint-foreground">
       <CardHeader>
         <CardTitle className="text-base">
           Regression Sprint {sprint.sprint} — Day {sprint.day}
