@@ -1,8 +1,12 @@
 import { days } from "@/data/days";
 import { phases } from "@/data/phases";
 import { getAllProgress } from "@/lib/actions";
+import { aggregateSkillPillars } from "@/lib/skill-pillars";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { ActivityCalendar } from "@/components/ActivityCalendar";
+import { ConfidenceTrendChart } from "@/components/ConfidenceTrendChart";
+import { SkillPillarChart } from "@/components/SkillPillarChart";
 
 export const dynamic = "force-dynamic";
 
@@ -16,6 +20,16 @@ export default async function ProgressPage() {
     .sort((a, b) => a.day - b.day);
 
   const wentWrongLog = completed.filter((p) => p.whatWentWrong);
+
+  const completedDates = completed
+    .filter((p) => p.completedAt !== null)
+    .map((p) => new Date(p.completedAt!).toISOString());
+
+  const skillPillarData = aggregateSkillPillars(
+    completed
+      .map((p) => days.find((d) => d.day === p.day))
+      .filter((d): d is (typeof days)[number] => d !== undefined),
+  );
 
   return (
     <div className="mx-auto max-w-3xl space-y-6 p-6">
@@ -57,20 +71,30 @@ export default async function ProgressPage() {
 
       <Card>
         <CardHeader>
+          <CardTitle>Activity</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ActivityCalendar completedDates={completedDates} />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle>Confidence trend</CardTitle>
         </CardHeader>
         <CardContent>
-          {confidenceLog.length === 0 ? (
-            <div className="text-sm text-muted-foreground">No completed days yet.</div>
-          ) : (
-            <div className="flex flex-wrap gap-2 text-sm">
-              {confidenceLog.map((p) => (
-                <span key={p.day} className="rounded border px-2 py-1">
-                  Day {p.day}: {p.confidence}/5
-                </span>
-              ))}
-            </div>
-          )}
+          <ConfidenceTrendChart
+            data={confidenceLog.map((p) => ({ day: p.day, confidence: p.confidence! }))}
+          />
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
+          <CardTitle>Time by skill pillar</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <SkillPillarChart data={skillPillarData} />
         </CardContent>
       </Card>
 
