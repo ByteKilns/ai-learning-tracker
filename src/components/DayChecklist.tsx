@@ -3,7 +3,7 @@
 import { Checkbox } from "@/components/ui/checkbox";
 import { toggleSection } from "@/lib/actions";
 import type { Day, ResourceStep, SectionKey } from "@/lib/types";
-import { useTransition } from "react";
+import { useOptimistic, useTransition } from "react";
 
 const SECTION_LABELS: Record<SectionKey, string> = {
   learn: "Learn",
@@ -36,6 +36,13 @@ export function DayChecklist({
   sectionsDone: Record<SectionKey, boolean>;
 }) {
   const [isPending, startTransition] = useTransition();
+  const [optimisticSectionsDone, setOptimisticDone] = useOptimistic(
+    sectionsDone,
+    (state, { key, checked }: { key: SectionKey; checked: boolean }) => ({
+      ...state,
+      [key]: checked,
+    }),
+  );
   const keys: SectionKey[] = ["learn", "build", "project", "revision", "check"];
 
   return (
@@ -45,11 +52,15 @@ export function DayChecklist({
         return (
           <label key={key} className="flex items-start gap-3 rounded-md border p-3">
             <Checkbox
-              checked={sectionsDone[key]}
+              checked={optimisticSectionsDone[key]}
               disabled={isPending}
-              onCheckedChange={(checked) =>
-                startTransition(() => toggleSection(day.day, key, checked === true))
-              }
+              onCheckedChange={(checked) => {
+                const done = checked === true;
+                startTransition(async () => {
+                  setOptimisticDone({ key, checked: done });
+                  await toggleSection(day.day, key, done);
+                });
+              }}
             />
             <div className="flex-1">
               <div className="font-medium">
