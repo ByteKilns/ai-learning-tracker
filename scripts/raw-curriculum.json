@@ -1,0 +1,1114 @@
+{
+  "tracker": [
+    {
+      "day": 1,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "Scalars, vectors, dimensions",
+      "theoryLearn": "Scalars vs vectors, notation, dimensions, norms and geometry.",
+      "codeBuild": "NumPy vector operations from scratch + verify with NumPy.",
+      "projectWork": "Jira AI Engineer: define problem, users, MVP and constraints.",
+      "revision": "Recall vectors/norms without notes.",
+      "resource": "Mathematics for Machine Learning + 3Blue1Brown",
+      "skillPillar": "AI applications + Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 2,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "Dot products and cosine similarity",
+      "theoryLearn": "Dot product, angle, projection, cosine similarity and why similarity matters.",
+      "codeBuild": "Implement dot product and cosine similarity without NumPy.",
+      "projectWork": "Jira: ticket -> structured requirement JSON.",
+      "revision": "Rebuild dot product from blank editor.",
+      "resource": "Mathematics for Machine Learning + 3Blue1Brown",
+      "skillPillar": "AI applications + ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 3,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "Matrices and matrix multiplication",
+      "theoryLearn": "Matrix shapes, matrix-vector multiplication, matrix-matrix multiplication.",
+      "codeBuild": "Implement matrix multiplication; inspect shapes and failures.",
+      "projectWork": "Jira: structured requirement -> acceptance criteria.",
+      "revision": "Explain W x + b geometrically.",
+      "resource": "Mathematics for Machine Learning + 3Blue1Brown",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 4,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "Linear transformations",
+      "theoryLearn": "Matrices as transformations; basis, span, linear independence.",
+      "codeBuild": "Visualize 2D transformations; write a small matrix toolkit.",
+      "projectWork": "Jira: requirement -> implementation plan.",
+      "revision": "Explain basis/span/linear transformation.",
+      "resource": "Mathematics for Machine Learning + 3Blue1Brown",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 5,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "Probability and statistics",
+      "theoryLearn": "Random variables, distributions, mean/variance, conditional probability, Bayes intuition.",
+      "codeBuild": "Implement basic statistics and sampling experiments.",
+      "projectWork": "Jira V1: ticket -> plan -> code suggestion.",
+      "revision": "Probability/ML interview questions.",
+      "resource": "Mathematics for Machine Learning",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 6,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "ML workflow",
+      "theoryLearn": "Features, labels, train/validation/test, leakage, baseline, metrics.",
+      "codeBuild": "Build a tiny sklearn baseline with a reproducible split.",
+      "projectWork": "Jira V1: add generated unit-test suggestions.",
+      "revision": "Explain leakage and baseline choice.",
+      "resource": "Hands-On Machine Learning",
+      "skillPillar": "AI applications + Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 7,
+      "phase": "Phase 1 — Foundations + Sprint",
+      "focus": "REGRESSION SPRINT #1",
+      "theoryLearn": "No major new topic: retrieve math + ML foundations.",
+      "codeBuild": "Blank-page reconstruction: vectors, dot product, matrix multiplication, sklearn baseline.",
+      "projectWork": "Jira V1 demo and architecture explanation.",
+      "revision": "Record weak areas and recovery tasks.",
+      "resource": "Sprint checklist + prior notes",
+      "skillPillar": "Evaluation + continuous learning",
+      "notes": ""
+    },
+    {
+      "day": 8,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "Linear regression",
+      "theoryLearn": "OLS intuition, loss functions, residuals, gradient intuition.",
+      "codeBuild": "Implement linear regression with NumPy; compare sklearn.",
+      "projectWork": "Classical ML mini-project: define dataset + target.",
+      "revision": "Explain bias/variance.",
+      "resource": "Hands-On Machine Learning",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 9,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "Logistic regression",
+      "theoryLearn": "Logits, sigmoid, decision boundary, classification metrics.",
+      "codeBuild": "Train classifier; confusion matrix, precision, recall, F1.",
+      "projectWork": "Mini-project: baseline classifier.",
+      "revision": "Metric selection from a scenario.",
+      "resource": "Hands-On Machine Learning",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 10,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "Trees and ensembles",
+      "theoryLearn": "Decision trees, random forests, boosting, feature importance.",
+      "codeBuild": "Train/compare tree models; inspect overfitting.",
+      "projectWork": "Mini-project model comparison.",
+      "revision": "Explain why ensembles help.",
+      "resource": "Hands-On Machine Learning",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 11,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "Unsupervised learning",
+      "theoryLearn": "K-means, clustering intuition, dimensionality reduction.",
+      "codeBuild": "Cluster a dataset; visualize; discuss failure modes.",
+      "projectWork": "Mini-project: segmentation/exploration.",
+      "revision": "Explain when clustering is appropriate.",
+      "resource": "Hands-On Machine Learning",
+      "skillPillar": "ML foundations",
+      "notes": ""
+    },
+    {
+      "day": 12,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "Evaluation and error analysis",
+      "theoryLearn": "Holdouts, cross-validation, calibration, error buckets, data issues.",
+      "codeBuild": "Create evaluation report and error taxonomy.",
+      "projectWork": "Classical ML project: evaluation harness.",
+      "revision": "Build an error-analysis table from failures.",
+      "resource": "Hands-On Machine Learning + ChatGPT",
+      "skillPillar": "Evaluation",
+      "notes": ""
+    },
+    {
+      "day": 13,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "Spec-driven development",
+      "theoryLearn": "Constitution/spec/plan/implement/validate/replan; acceptance criteria.",
+      "codeBuild": "Create a project spec and validation checklist for Jira AI Engineer.",
+      "projectWork": "Jira V2: specification -> plan -> implementation -> tests.",
+      "revision": "Explain why specs reduce agent drift.",
+      "resource": "DeepLearning.AI SDD material + project docs",
+      "skillPillar": "Coding agents + software engineering",
+      "notes": ""
+    },
+    {
+      "day": 14,
+      "phase": "Phase 2 — Classical ML + Evals",
+      "focus": "REGRESSION SPRINT #2",
+      "theoryLearn": "Classical ML + evaluation + SDD retrieval.",
+      "codeBuild": "Rebuild one classifier and its eval loop from blank files; debug deliberate failures.",
+      "projectWork": "Jira V2 review: spec quality + test evidence.",
+      "revision": "Recovery plan for weak metrics/engineering concepts.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + coding agents",
+      "notes": ""
+    },
+    {
+      "day": 15,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "Neural network foundations",
+      "theoryLearn": "Perceptron, layers, activations, forward pass.",
+      "codeBuild": "Implement a tiny MLP forward pass in NumPy.",
+      "projectWork": "Jira: map spec acceptance criteria to tests.",
+      "revision": "Explain forward pass.",
+      "resource": "Hands-On Machine Learning + Goodfellow",
+      "skillPillar": "ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 16,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "Backpropagation",
+      "theoryLearn": "Computational graphs, gradients, chain rule intuition.",
+      "codeBuild": "Manual backprop on a tiny network; gradient check.",
+      "projectWork": "Jira: generated tests + test oracle design.",
+      "revision": "Derive one gradient from memory.",
+      "resource": "Goodfellow + ChatGPT",
+      "skillPillar": "ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 17,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "Optimization and regularization",
+      "theoryLearn": "SGD, momentum, Adam intuition, learning rate, weight decay, dropout.",
+      "codeBuild": "Train PyTorch model; compare learning rates.",
+      "projectWork": "DL mini-project starts.",
+      "revision": "Diagnose under/overfitting.",
+      "resource": "Hands-On Machine Learning + PyTorch docs",
+      "skillPillar": "ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 18,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "PyTorch fundamentals",
+      "theoryLearn": "Tensors, Dataset/DataLoader, modules, training loop, checkpoints.",
+      "codeBuild": "Build clean PyTorch training loop.",
+      "projectWork": "DL mini-project: dataset + model + training.",
+      "revision": "Rebuild training loop without template.",
+      "resource": "PyTorch docs + Hands-On Machine Learning",
+      "skillPillar": "Software engineering + ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 19,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "CNNs",
+      "theoryLearn": "Convolution, receptive fields, pooling, augmentation.",
+      "codeBuild": "Train small CNN; inspect confusion matrix.",
+      "projectWork": "DL mini-project: image classifier.",
+      "revision": "Explain convolution intuitively.",
+      "resource": "Hands-On Machine Learning",
+      "skillPillar": "ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 20,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "Model debugging",
+      "theoryLearn": "Learning curves, data issues, class imbalance, reproducibility.",
+      "codeBuild": "Add experiment logging and failure analysis.",
+      "projectWork": "DL project: compare 2–3 controlled experiments.",
+      "revision": "Explain one failure and fix.",
+      "resource": "PyTorch docs + ChatGPT",
+      "skillPillar": "Evaluation + ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 21,
+      "phase": "Phase 3 — Deep Learning + PyTorch",
+      "focus": "REGRESSION SPRINT #3",
+      "theoryLearn": "DL retrieval and implementation.",
+      "codeBuild": "Blank-page MLP/PyTorch training loop; debug an intentionally broken model.",
+      "projectWork": "Explain architecture and experiment results.",
+      "revision": "Recovery tasks from confidence score.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + ML/DL",
+      "notes": ""
+    },
+    {
+      "day": 22,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "Attention intuition",
+      "theoryLearn": "Queries, keys, values; dot-product attention.",
+      "codeBuild": "Implement single-head attention from scratch.",
+      "projectWork": "Connect attention to vector math.",
+      "revision": "Explain QK^T.",
+      "resource": "Build a Large Language Model From Scratch + 3Blue1Brown",
+      "skillPillar": "Transformers/LLMs",
+      "notes": ""
+    },
+    {
+      "day": 23,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "Multi-head attention",
+      "theoryLearn": "Heads, projections, concatenation, scaling.",
+      "codeBuild": "Implement multi-head attention in PyTorch.",
+      "projectWork": "Transformer component notebook.",
+      "revision": "Explain why multiple heads help.",
+      "resource": "Build a Large Language Model From Scratch",
+      "skillPillar": "Transformers/LLMs",
+      "notes": ""
+    },
+    {
+      "day": 24,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "Transformer block",
+      "theoryLearn": "Residuals, layer norm, feed-forward network.",
+      "codeBuild": "Implement a small transformer block.",
+      "projectWork": "Transformer notebook: stack blocks.",
+      "revision": "Draw block from memory.",
+      "resource": "Raschka + Transformer paper",
+      "skillPillar": "Transformers/LLMs",
+      "notes": ""
+    },
+    {
+      "day": 25,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "Tokenization and embeddings",
+      "theoryLearn": "Tokens, vocabularies, embedding lookup, positional information.",
+      "codeBuild": "Build toy tokenizer + embedding lookup.",
+      "projectWork": "Movie recommender Then-vs-Now placeholder: collect old-project inputs when available.",
+      "revision": "Explain embedding vs one-hot.",
+      "resource": "Raschka",
+      "skillPillar": "Transformers/LLMs",
+      "notes": ""
+    },
+    {
+      "day": 26,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "Generation basics",
+      "theoryLearn": "Next-token prediction, logits, greedy vs sampling.",
+      "codeBuild": "Implement tiny decoder loop; compare decoding.",
+      "projectWork": "LLM mini-lab.",
+      "revision": "Explain temperature/top-k/top-p.",
+      "resource": "Raschka",
+      "skillPillar": "Transformers/LLMs",
+      "notes": ""
+    },
+    {
+      "day": 27,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "Movie Recommender — THEN vs NOW",
+      "theoryLearn": "Placeholder: historical VAE/recommendation/React details will be inserted later.",
+      "codeBuild": "Create comparison template only; do not invent historical facts.",
+      "projectWork": "Map old concepts to modern embeddings/retrieval/ranking/LLM possibilities.",
+      "revision": "List questions to recover from old materials.",
+      "resource": "Reserved historical-project placeholder",
+      "skillPillar": "Shaping the build",
+      "notes": ""
+    },
+    {
+      "day": 28,
+      "phase": "Phase 4 — Transformers + Historical Project #1",
+      "focus": "REGRESSION SPRINT #4",
+      "theoryLearn": "Transformers + movie recommender comparison checkpoint.",
+      "codeBuild": "Blank-page attention implementation + transformer diagram.",
+      "projectWork": "Explain what changed from the old recommender only from supplied evidence.",
+      "revision": "Record gaps; no guessed history.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + communication",
+      "notes": ""
+    },
+    {
+      "day": 29,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "LLM architecture",
+      "theoryLearn": "Decoder-only models, context window, inference flow.",
+      "codeBuild": "Trace a prompt through tokenization -> model -> decoding.",
+      "projectWork": "Jira V3: requirement + repo context design.",
+      "revision": "Explain LLM inference at a high level.",
+      "resource": "Raschka",
+      "skillPillar": "Transformers/LLMs",
+      "notes": ""
+    },
+    {
+      "day": 30,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "Prompting and structured output",
+      "theoryLearn": "Roles, instructions, examples, constraints, schemas.",
+      "codeBuild": "Build reliable structured-output parser with validation.",
+      "projectWork": "Jira: requirement -> typed plan JSON.",
+      "revision": "Test malformed outputs.",
+      "resource": "AI Engineering / official model docs",
+      "skillPillar": "AI applications",
+      "notes": ""
+    },
+    {
+      "day": 31,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "Tool calling",
+      "theoryLearn": "Tool schemas, validation, permissions, retries.",
+      "codeBuild": "Implement tool-calling loop with safe mock tools.",
+      "projectWork": "Jira: repository/tool interface design.",
+      "revision": "Explain tool boundary vs model output.",
+      "resource": "AI Engineering + official docs",
+      "skillPillar": "AI applications + coding agents",
+      "notes": ""
+    },
+    {
+      "day": 32,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "Coding-agent fundamentals",
+      "theoryLearn": "Context, planning vs execution, steering, verification loops.",
+      "codeBuild": "Use a coding agent on a small repo with tests and a clear spec.",
+      "projectWork": "Jira V3: agent-assisted implementation with verifier.",
+      "revision": "Review agent changes line-by-line.",
+      "resource": "DeepLearning.AI AI Engineering / SDD",
+      "skillPillar": "Coding agents",
+      "notes": ""
+    },
+    {
+      "day": 33,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "Context engineering",
+      "theoryLearn": "Context selection, compression, relevance, state, memory.",
+      "codeBuild": "Build a context packer/selector for a small repo.",
+      "projectWork": "Jira: relevant-file retrieval strategy.",
+      "revision": "Explain why more context can be worse.",
+      "resource": "AI Engineering / agent material",
+      "skillPillar": "Coding agents",
+      "notes": ""
+    },
+    {
+      "day": 34,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "Jira V3 integration",
+      "theoryLearn": "Requirement -> spec -> repo context -> code -> tests -> review.",
+      "codeBuild": "Implement end-to-end V3 with explicit approval boundary.",
+      "projectWork": "Jira AI Engineer milestone demo.",
+      "revision": "Run regression tests against previous tickets.",
+      "resource": "Project docs + official APIs",
+      "skillPillar": "Coding agents + software engineering",
+      "notes": ""
+    },
+    {
+      "day": 35,
+      "phase": "Phase 5 — LLMs + Coding Agents",
+      "focus": "REGRESSION SPRINT #5",
+      "theoryLearn": "LLM + coding-agent retrieval.",
+      "codeBuild": "Build structured-output workflow and tool loop from blank; diagnose bad context.",
+      "projectWork": "Jira V3 architecture defense.",
+      "revision": "Record failure modes and fixes.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + coding agents",
+      "notes": ""
+    },
+    {
+      "day": 36,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "Embeddings",
+      "theoryLearn": "Semantic representation, embedding spaces, similarity.",
+      "codeBuild": "Generate embeddings; inspect nearest neighbors.",
+      "projectWork": "RAG project starts.",
+      "revision": "Explain semantic vs lexical search.",
+      "resource": "AI Engineering + embedding docs",
+      "skillPillar": "RAG",
+      "notes": ""
+    },
+    {
+      "day": 37,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "Chunking and ingestion",
+      "theoryLearn": "Chunk size, overlap, metadata, parsing.",
+      "codeBuild": "Build ingestion pipeline with metadata.",
+      "projectWork": "RAG: ingest project docs.",
+      "revision": "Compare chunking strategies.",
+      "resource": "AI Engineering",
+      "skillPillar": "RAG",
+      "notes": ""
+    },
+    {
+      "day": 38,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "Vector search",
+      "theoryLearn": "ANN intuition, filtering, top-k, hybrid retrieval.",
+      "codeBuild": "Use a vector DB; measure retrieval hits.",
+      "projectWork": "RAG retrieval layer.",
+      "revision": "Explain recall@k concept.",
+      "resource": "Vector DB docs + AI Engineering",
+      "skillPillar": "RAG",
+      "notes": ""
+    },
+    {
+      "day": 39,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "Grounded generation",
+      "theoryLearn": "Context assembly, citations/evidence, refusal behavior.",
+      "codeBuild": "Build grounded answer flow with evidence display.",
+      "projectWork": "RAG application.",
+      "revision": "Break it with missing context.",
+      "resource": "AI Engineering",
+      "skillPillar": "Evaluation + RAG",
+      "notes": ""
+    },
+    {
+      "day": 40,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "RAG failure analysis",
+      "theoryLearn": "Irrelevant retrieval, missing chunks, stale data, context overload.",
+      "codeBuild": "Create failure taxonomy + targeted tests.",
+      "projectWork": "RAG evaluation set.",
+      "revision": "Fix 3 deliberate failures.",
+      "resource": "AI Engineering",
+      "skillPillar": "Evaluation",
+      "notes": ""
+    },
+    {
+      "day": 41,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "RAG evaluation",
+      "theoryLearn": "Retrieval quality, answer correctness, groundedness, regression set.",
+      "codeBuild": "Build eval harness and baseline metrics.",
+      "projectWork": "Jira repository RAG: search relevant files.",
+      "revision": "Compare before/after retrieval changes.",
+      "resource": "AI Engineering + ChatGPT",
+      "skillPillar": "Evaluation",
+      "notes": ""
+    },
+    {
+      "day": 42,
+      "phase": "Phase 6 — RAG + Evaluation",
+      "focus": "REGRESSION SPRINT #6",
+      "theoryLearn": "RAG reconstruction and diagnosis.",
+      "codeBuild": "Rebuild ingestion/retrieval/generation from empty project; intentionally break retrieval.",
+      "projectWork": "Jira repo-RAG checkpoint.",
+      "revision": "Record retrieval vs generation failures.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + RAG",
+      "notes": ""
+    },
+    {
+      "day": 43,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "LangGraph state and nodes",
+      "theoryLearn": "State, TypedDict, nodes, START/END, compile/invoke.",
+      "codeBuild": "Rebuild Smart Router + Calculator.",
+      "projectWork": "Project 1 complete from memory.",
+      "revision": "Explain state transitions.",
+      "resource": "LangGraph official docs",
+      "skillPillar": "Agents + software engineering",
+      "notes": ""
+    },
+    {
+      "day": 44,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "Conditional routing",
+      "theoryLearn": "Conditional edges, routing functions, state updates.",
+      "codeBuild": "Add calculator/chat routing and tests.",
+      "projectWork": "Project 1 extension.",
+      "revision": "Test edge cases.",
+      "resource": "LangGraph docs",
+      "skillPillar": "Agents",
+      "notes": ""
+    },
+    {
+      "day": 45,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "Parallel branches",
+      "theoryLearn": "Shared state, independent branches, aggregation.",
+      "codeBuild": "Build Social Media Pipeline with Collect Results node.",
+      "projectWork": "Project 2 complete.",
+      "revision": "Explain branch convergence.",
+      "resource": "LangGraph docs",
+      "skillPillar": "Agents",
+      "notes": ""
+    },
+    {
+      "day": 46,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "Cycles and termination",
+      "theoryLearn": "Reviewer/rewrite loop, counters, termination conditions.",
+      "codeBuild": "Build Self-Correcting Content workflow.",
+      "projectWork": "Project 3 complete.",
+      "revision": "Break infinite-loop protection deliberately.",
+      "resource": "LangGraph docs",
+      "skillPillar": "Agents",
+      "notes": ""
+    },
+    {
+      "day": 47,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "Tools and agent workflows",
+      "theoryLearn": "Tool nodes, permissions, retries, failure handling.",
+      "codeBuild": "Add tools and approval boundary.",
+      "projectWork": "Mini agent: plan -> tool -> observe -> respond.",
+      "revision": "Explain workflow vs autonomous agent.",
+      "resource": "LangGraph docs + AI Engineering",
+      "skillPillar": "Agents + security",
+      "notes": ""
+    },
+    {
+      "day": 48,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "MCP and reusable Agent Skills",
+      "theoryLearn": "Tool interoperability, reusable skills, progressive disclosure.",
+      "codeBuild": "Build one small skill/tool package; connect through a controlled interface.",
+      "projectWork": "Jira V4: tools/MCP/skills experiment.",
+      "revision": "Explain when not to use multi-agent/MCP.",
+      "resource": "Current official docs / DeepLearning.AI material",
+      "skillPillar": "Coding agents",
+      "notes": ""
+    },
+    {
+      "day": 49,
+      "phase": "Phase 7 — LangGraph + Agents + Agent Skills",
+      "focus": "REGRESSION SPRINT #7",
+      "theoryLearn": "Workflow reconstruction.",
+      "codeBuild": "Blank-page design + implement routing + branch + cycle + tool + termination.",
+      "projectWork": "Jira V4 architecture review.",
+      "revision": "Recovery tasks from failures.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + agents",
+      "notes": ""
+    },
+    {
+      "day": 50,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "FastAPI and service boundaries",
+      "theoryLearn": "API design, request/response models, async basics.",
+      "codeBuild": "Expose one AI workflow through FastAPI.",
+      "projectWork": "Jira service boundary.",
+      "revision": "Explain API vs workflow boundary.",
+      "resource": "FastAPI docs",
+      "skillPillar": "Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 51,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "Persistence and data",
+      "theoryLearn": "Postgres basics, schema design, migrations, caching.",
+      "codeBuild": "Persist jobs/results/evals.",
+      "projectWork": "Jira: store tickets, runs, approvals.",
+      "revision": "Explain consistency trade-offs.",
+      "resource": "PostgreSQL docs + DDIA selectively",
+      "skillPillar": "Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 52,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "Docker and configuration",
+      "theoryLearn": "Containers, env vars, secrets, config separation.",
+      "codeBuild": "Containerize service; local compose.",
+      "projectWork": "Jira deployment skeleton.",
+      "revision": "Debug config failure.",
+      "resource": "Docker docs",
+      "skillPillar": "Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 53,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "Reliability",
+      "theoryLearn": "Retries, timeouts, idempotency, queues/background work.",
+      "codeBuild": "Add retry limits, timeouts, idempotency keys.",
+      "projectWork": "Jira: safe execution controls.",
+      "revision": "Simulate provider outage.",
+      "resource": "Designing Machine Learning Systems",
+      "skillPillar": "Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 54,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "Security and guardrails",
+      "theoryLearn": "Prompt injection, excessive permissions, secret exposure, unsafe code execution.",
+      "codeBuild": "Add allowlists, sandboxing strategy, approval gates.",
+      "projectWork": "Jira: human approval before code execution/merge.",
+      "revision": "Threat-model one workflow.",
+      "resource": "OWASP + AI security docs",
+      "skillPillar": "Security",
+      "notes": ""
+    },
+    {
+      "day": 55,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "Observability and cost",
+      "theoryLearn": "Structured logs, traces, token/cost accounting, latency.",
+      "codeBuild": "Add run IDs, logs, latency/cost metrics.",
+      "projectWork": "Jira: evaluation dashboard basics.",
+      "revision": "Explain where cost/latency comes from.",
+      "resource": "AI Engineering + observability docs",
+      "skillPillar": "Evaluation + production",
+      "notes": ""
+    },
+    {
+      "day": 56,
+      "phase": "Phase 8 — Production AI + Software Engineering",
+      "focus": "System design trade-offs",
+      "theoryLearn": "Scale, reliability, latency, cost, caching, failure recovery.",
+      "codeBuild": "Draw architecture and alternatives for Jira AI Engineer.",
+      "projectWork": "Portfolio architecture document.",
+      "revision": "Mock system-design interview.",
+      "resource": "Designing Machine Learning Systems + DDIA",
+      "skillPillar": "System design",
+      "notes": ""
+    },
+    {
+      "day": 57,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "Evaluation architecture",
+      "theoryLearn": "Offline vs online evals, golden sets, graders, human review.",
+      "codeBuild": "Build reusable eval runner.",
+      "projectWork": "Jira: regression suite across tickets.",
+      "revision": "Explain evaluator failure modes.",
+      "resource": "AI Engineering",
+      "skillPillar": "Evaluation",
+      "notes": ""
+    },
+    {
+      "day": 58,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "Regression engineering",
+      "theoryLearn": "Golden test sets, versioning, prompt/model changes.",
+      "codeBuild": "Automate regression suite in CI-like workflow.",
+      "projectWork": "Jira: every change runs targeted evals.",
+      "revision": "Intentionally introduce regression.",
+      "resource": "AI Engineering + project docs",
+      "skillPillar": "Evaluation",
+      "notes": ""
+    },
+    {
+      "day": 59,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "Agent verification",
+      "theoryLearn": "Verifiers, test oracles, bounded autonomy, approval points.",
+      "codeBuild": "Add verifier node and quality gate.",
+      "projectWork": "Jira: code + tests + reviewer + human.",
+      "revision": "Explain where autonomy must stop.",
+      "resource": "SDD + coding-agent material",
+      "skillPillar": "Coding agents",
+      "notes": ""
+    },
+    {
+      "day": 60,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "Product/build shaping",
+      "theoryLearn": "Problem framing, users, success metrics, MVP, non-goals.",
+      "codeBuild": "Write product brief + acceptance criteria.",
+      "projectWork": "Jira: refine one real ticket as product owner/engineer.",
+      "revision": "Defend why/why-not build.",
+      "resource": "AI engineering/product material",
+      "skillPillar": "Shaping the build",
+      "notes": ""
+    },
+    {
+      "day": 61,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "Architecture decision records",
+      "theoryLearn": "Capture alternatives, constraints, decision and consequences.",
+      "codeBuild": "Write 3 ADRs for Jira system.",
+      "projectWork": "Portfolio engineering record.",
+      "revision": "Interview: defend each trade-off.",
+      "resource": "Designing Machine Learning Systems",
+      "skillPillar": "Software engineering",
+      "notes": ""
+    },
+    {
+      "day": 62,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "Coding-agent orchestration",
+      "theoryLearn": "Planning, subagents, context budgets, parallel work, verification.",
+      "codeBuild": "Run a bounded multi-agent experiment with isolated worktrees/files.",
+      "projectWork": "Jira: planner -> implementer -> reviewer.",
+      "revision": "Measure tokens/time/failure rate.",
+      "resource": "Current coding-agent guidance + project docs",
+      "skillPillar": "Coding agents",
+      "notes": ""
+    },
+    {
+      "day": 63,
+      "phase": "Phase 9 — Evals + Product + AI-Native Engineering",
+      "focus": "REGRESSION SPRINT #8",
+      "theoryLearn": "Full-stack AI engineering regression.",
+      "codeBuild": "From blank repo: design + implement a small AI service with eval, test, logging and approval.",
+      "projectWork": "Jira end-to-end milestone.",
+      "revision": "Create final recovery list.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + software engineering",
+      "notes": ""
+    },
+    {
+      "day": 64,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "Movie Recommender — modern redesign",
+      "theoryLearn": "Use supplied historical material; compare VAE/recommendation/React with modern embeddings/retrieval/ranking.",
+      "codeBuild": "Build a small modern recommender baseline only if historical details are available.",
+      "projectWork": "Historical Project #1 comparison artifact.",
+      "revision": "Identify genuine continuity vs change.",
+      "resource": "Reserved project materials + ML/AI resources",
+      "skillPillar": "Shaping the build",
+      "notes": ""
+    },
+    {
+      "day": 65,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "Movie recommender evaluation",
+      "theoryLearn": "Offline ranking metrics, retrieval quality, cold-start, user feedback.",
+      "codeBuild": "Build evaluation notebook and error buckets.",
+      "projectWork": "Modern recommender mini-demo.",
+      "revision": "Explain metric trade-offs.",
+      "resource": "ML evaluation resources",
+      "skillPillar": "Evaluation",
+      "notes": ""
+    },
+    {
+      "day": 66,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "AR/CV then-vs-now placeholder",
+      "theoryLearn": "Reserved: inspect old streaming/AR/gesture stack when supplied.",
+      "codeBuild": "Do not invent historical details; create comparison schema.",
+      "projectWork": "Historical Project #2 planning.",
+      "revision": "List missing evidence/questions.",
+      "resource": "Reserved project materials",
+      "skillPillar": "Shaping the build",
+      "notes": ""
+    },
+    {
+      "day": 67,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "Real-time inference",
+      "theoryLearn": "Latency budgets, batching, streaming, edge vs server, model optimization.",
+      "codeBuild": "Prototype a real-time inference service or benchmark.",
+      "projectWork": "AR/CV modern architecture sketch.",
+      "revision": "Explain latency budget.",
+      "resource": "Designing Machine Learning Systems + PyTorch",
+      "skillPillar": "ML/DL + production",
+      "notes": ""
+    },
+    {
+      "day": 68,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "Jira AI Engineer final build I",
+      "theoryLearn": "Requirement -> spec -> retrieval -> plan -> code -> tests.",
+      "codeBuild": "Implement production-style workflow with approval boundary.",
+      "projectWork": "Capstone build.",
+      "revision": "Run targeted regression set.",
+      "resource": "Project docs + official docs",
+      "skillPillar": "AI applications",
+      "notes": ""
+    },
+    {
+      "day": 69,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "Jira AI Engineer final build II",
+      "theoryLearn": "Security, observability, evals, failure recovery, documentation.",
+      "codeBuild": "Harden system and produce architecture/ADR docs.",
+      "projectWork": "Capstone build + portfolio evidence.",
+      "revision": "Perform incident/failure drill.",
+      "resource": "Project docs + security/observability docs",
+      "skillPillar": "Production + security",
+      "notes": ""
+    },
+    {
+      "day": 70,
+      "phase": "Phase 10 — Historical Projects + Capstone Build",
+      "focus": "REGRESSION SPRINT #9",
+      "theoryLearn": "Portfolio-level regression.",
+      "codeBuild": "Rebuild core architecture diagrams and selected components from memory; run final eval suite.",
+      "projectWork": "Jira capstone review.",
+      "revision": "Finalize weak-area recovery.",
+      "resource": "Sprint checklist",
+      "skillPillar": "Evaluation + communication",
+      "notes": ""
+    },
+    {
+      "day": 71,
+      "phase": "Phase 11 — Final Defense + Market Readiness",
+      "focus": "AR/CV then-vs-now deep dive",
+      "theoryLearn": "Compare historical stack with modern CV/DL/real-time inference using only supplied project evidence.",
+      "codeBuild": "Optional modern proof-of-concept component.",
+      "projectWork": "Historical Project #2 comparison artifact.",
+      "revision": "Prepare interview story: then -> now -> why.",
+      "resource": "Reserved project materials",
+      "skillPillar": "Shaping the build",
+      "notes": ""
+    },
+    {
+      "day": 72,
+      "phase": "Phase 11 — Final Defense + Market Readiness",
+      "focus": "Portfolio packaging",
+      "theoryLearn": "README, architecture diagrams, demo script, eval results, ADRs, limitations.",
+      "codeBuild": "Package Jira capstone + selected ML/DL project.",
+      "projectWork": "Portfolio polish.",
+      "revision": "Practice 5-minute project walkthrough.",
+      "resource": "Project docs",
+      "skillPillar": "Communication",
+      "notes": ""
+    },
+    {
+      "day": 73,
+      "phase": "Phase 11 — Final Defense + Market Readiness",
+      "focus": "System design interview day",
+      "theoryLearn": "AI system design: requirements, architecture, data, model, eval, security, scale, cost.",
+      "codeBuild": "Whiteboard 2 systems from blank.",
+      "projectWork": "Mock interview.",
+      "revision": "Record gaps and correct them.",
+      "resource": "DDIA + Designing ML Systems",
+      "skillPillar": "System design",
+      "notes": ""
+    },
+    {
+      "day": 74,
+      "phase": "Phase 11 — Final Defense + Market Readiness",
+      "focus": "Final regression + technical defense",
+      "theoryLearn": "Full curriculum retrieval; explain ML, DL, Transformers, RAG, agents, coding agents and production trade-offs.",
+      "codeBuild": "Rebuild selected components from blank; run final regression suite.",
+      "projectWork": "Defend Jira architecture and historical-project comparisons.",
+      "revision": "Create final skill-gap list.",
+      "resource": "All prior resources",
+      "skillPillar": "Evaluation + communication",
+      "notes": ""
+    },
+    {
+      "day": 75,
+      "phase": "Phase 11 — Final Defense + Market Readiness",
+      "focus": "CAPSTONE / MARKET-READY DAY",
+      "theoryLearn": "No new major topic. Final demonstration and next-90-day plan.",
+      "codeBuild": "Run capstone demo, tests, evals, failure drill and architecture defense.",
+      "projectWork": "Final AI Engineering Assistant: Jira + repo tools + RAG + LangGraph + code/tests + reviewer + human approval.",
+      "revision": "Write next-90-day specialization plan.",
+      "resource": "All resources + official docs",
+      "skillPillar": "All four AI Engineering pillars",
+      "notes": ""
+    }
+  ],
+  "projects": [
+    {
+      "project": "Jira AI Software Engineer",
+      "when": "Day 5 → Day 75",
+      "purpose": "Longitudinal capstone connecting requirements, SDD, coding agents, RAG, LangGraph, tools, tests, evals and human approval.",
+      "evolution": "V1 ticket→structured output; V2 spec→plan→code→tests; V3 repo context/RAG; V4 tools/LangGraph/MCP/skills; final production-style workflow."
+    },
+    {
+      "project": "Movie Recommender — Then vs Now",
+      "when": "Day 24 + Days 64–65",
+      "purpose": "Historical comparison placeholder; use only supplied old-project evidence.",
+      "evolution": "Old VAE/recommendation/React details remain intentionally unspecified until provided. Modern comparison will cover embeddings, retrieval, ranking, evaluation and product/system trade-offs."
+    },
+    {
+      "project": "Video Streaming + AR + Hand Gestures — Then vs Now",
+      "when": "Day 66 + Day 71",
+      "purpose": "Historical comparison placeholder and modern CV/real-time architecture study.",
+      "evolution": "Historical stack remains intentionally unspecified until supplied. Modern comparison will cover DL/CV, inference latency, streaming, edge/server trade-offs and deployment."
+    },
+    {
+      "project": "Final AI Engineering Assistant",
+      "when": "Days 71–75",
+      "purpose": "Demonstrate market-ready end-to-end AI engineering.",
+      "evolution": "Jira + repository tools + RAG + LangGraph + code generation + tests + reviewer + evaluation + security + human approval."
+    }
+  ],
+  "studySystem": [
+    {
+      "component": "Daily operating model",
+      "howToUse": "~2h theory + ~2h coding + ~1h project + ~1h revision + ~1h docs/interview. Shift flexibly on math/project-heavy days."
+    },
+    {
+      "component": "Books",
+      "howToUse": "Use for durable fundamentals, mathematics and coherent explanations. Read selected chapters; do not attempt to finish every book."
+    },
+    {
+      "component": "ChatGPT",
+      "howToUse": "Use as tutor, Socratic questioner, exercise generator, debugger, reviewer, architecture reviewer and mock interviewer—not as a code-copying shortcut."
+    },
+    {
+      "component": "Official documentation",
+      "howToUse": "Source of truth for current APIs, framework behavior, configuration and implementation details."
+    },
+    {
+      "component": "Regression Sprint",
+      "howToUse": "Approximately every 7 days. No major new topic. Work from blank files, retrieve concepts, debug deliberate failures, integrate multiple skills and record weak areas."
+    },
+    {
+      "component": "Evaluation loop",
+      "howToUse": "Every AI project should have a test set, explicit quality criteria, failure taxonomy and a repeatable regression check."
+    },
+    {
+      "component": "Coding-agent loop",
+      "howToUse": "Spec → plan → context → implement → verify → review → approve. Keep permissions bounded and provide verifiers."
+    },
+    {
+      "component": "Build-shaping loop",
+      "howToUse": "Problem → user → success metric → MVP → non-goals → architecture → build → measure → iterate."
+    },
+    {
+      "component": "Market-ready evidence",
+      "howToUse": "Portfolio artifacts should include architecture, tests/evals, failure analysis, ADRs, security boundaries, cost/latency discussion and a clear demo."
+    }
+  ],
+  "resources": [
+    {
+      "resource": "Mathematics for Machine Learning — Deisenroth et al.",
+      "role": "Math foundation",
+      "whenToUse": "Days 1–7; revisit before ML/DL",
+      "notes": "Vectors, matrices, probability and ML-oriented mathematics."
+    },
+    {
+      "resource": "3Blue1Brown — Essence of Linear Algebra",
+      "role": "Visual intuition",
+      "whenToUse": "Days 1–4",
+      "notes": "Use alongside the math book for geometric intuition."
+    },
+    {
+      "resource": "Hands-On Machine Learning — Aurélien Géron",
+      "role": "Primary practical ML/DL",
+      "whenToUse": "Days 6–23",
+      "notes": "Use selected chapters for ML workflow, classical ML and neural networks."
+    },
+    {
+      "resource": "Deep Learning — Goodfellow, Bengio & Courville",
+      "role": "Deep theory reference",
+      "whenToUse": "Days 15–23 and later",
+      "notes": "Selective reading for optimization, representation and theory; not a cover-to-cover target."
+    },
+    {
+      "resource": "Build a Large Language Model (From Scratch) — Sebastian Raschka",
+      "role": "Transformer/LLM internals",
+      "whenToUse": "Days 22–35",
+      "notes": "Use for tokenization, attention, transformer blocks and generation."
+    },
+    {
+      "resource": "Designing Machine Learning Systems — Chip Huyen",
+      "role": "Production ML/system design",
+      "whenToUse": "Days 50–63",
+      "notes": "Use for reliability, data, deployment, monitoring and trade-offs."
+    },
+    {
+      "resource": "AI Engineering — Chip Huyen",
+      "role": "AI application engineering",
+      "whenToUse": "Days 29–70",
+      "notes": "Use for LLM applications, evaluation, context, retrieval and production considerations."
+    },
+    {
+      "resource": "Designing Data-Intensive Applications — Martin Kleppmann",
+      "role": "Distributed systems reference",
+      "whenToUse": "Days 52–63, then post-75",
+      "notes": "Selective reference for storage, consistency, replication and system design."
+    },
+    {
+      "resource": "Official framework/API documentation",
+      "role": "Current implementation truth",
+      "whenToUse": "Every relevant day",
+      "notes": "Prefer official docs over stale tutorials for APIs and framework behavior."
+    }
+  ],
+  "regressionSprints": [
+    {
+      "sprint": 1,
+      "day": 7,
+      "whatToRetrieve": "Math + ML workflow",
+      "blankPageReconstruction": "Vectors, dot product, matrix multiplication, sklearn baseline",
+      "integrationDrill": "Break a data split / metric and diagnose",
+      "passCondition": "Explain + implement + debug without notes"
+    },
+    {
+      "sprint": 2,
+      "day": 14,
+      "whatToRetrieve": "Classical ML + eval + SDD",
+      "blankPageReconstruction": "Classifier + evaluation loop + spec",
+      "integrationDrill": "Inject leakage/metric bug; repair spec",
+      "passCondition": "Evidence of correct diagnosis and repair"
+    },
+    {
+      "sprint": 3,
+      "day": 21,
+      "whatToRetrieve": "DL + PyTorch",
+      "blankPageReconstruction": "MLP/training loop/CNN",
+      "integrationDrill": "Break optimizer/data pipeline",
+      "passCondition": "Explain training failure and fix"
+    },
+    {
+      "sprint": 4,
+      "day": 28,
+      "whatToRetrieve": "Attention + Transformers",
+      "blankPageReconstruction": "Single-head attention + transformer diagram",
+      "integrationDrill": "Shape/scale/softmax failure",
+      "passCondition": "Correct implementation and explanation"
+    },
+    {
+      "sprint": 5,
+      "day": 35,
+      "whatToRetrieve": "LLM + coding agents",
+      "blankPageReconstruction": "Structured output + tool loop",
+      "integrationDrill": "Bad context / malformed tool call",
+      "passCondition": "Bounded agent with verifier"
+    },
+    {
+      "sprint": 6,
+      "day": 42,
+      "whatToRetrieve": "RAG",
+      "blankPageReconstruction": "Ingestion + retrieval + generation",
+      "integrationDrill": "Break retrieval and diagnose",
+      "passCondition": "Retrieval and generation errors separated"
+    },
+    {
+      "sprint": 7,
+      "day": 49,
+      "whatToRetrieve": "LangGraph + agents",
+      "blankPageReconstruction": "Routing + branch + cycle + tool",
+      "integrationDrill": "Break termination/tool permission",
+      "passCondition": "Safe workflow from blank"
+    },
+    {
+      "sprint": 8,
+      "day": 56,
+      "whatToRetrieve": "Production AI + software engineering",
+      "blankPageReconstruction": "API + persistence + logging + retry",
+      "integrationDrill": "Simulate outage/security failure",
+      "passCondition": "Correct recovery and trade-off explanation"
+    },
+    {
+      "sprint": 9,
+      "day": 63,
+      "whatToRetrieve": "Evals + product + agentic engineering",
+      "blankPageReconstruction": "Small AI service + eval + spec",
+      "integrationDrill": "Regression + agent verification",
+      "passCondition": "Pass evals and defend architecture"
+    },
+    {
+      "sprint": 10,
+      "day": 70,
+      "whatToRetrieve": "Capstone architecture",
+      "blankPageReconstruction": "End-to-end Jira AI Engineer",
+      "integrationDrill": "Failure drill + security + approval",
+      "passCondition": "Portfolio-ready evidence"
+    },
+    {
+      "sprint": 11,
+      "day": 74,
+      "whatToRetrieve": "Final technical defense",
+      "blankPageReconstruction": "Core concepts and architecture from memory",
+      "integrationDrill": "Mixed failures across stack",
+      "passCondition": "Interview-level explanation + implementation"
+    }
+  ]
+}
