@@ -9,7 +9,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="flex w-56 shrink-0 flex-col gap-6 border-r bg-background p-4">
+    <aside className="sticky top-0 flex h-screen w-56 shrink-0 flex-col gap-6 overflow-y-auto border-r bg-background p-4">
       <div className="font-semibold">AI Engineering Tracker</div>
       <nav className="flex flex-col gap-1 text-sm">
         {navLinks.map((l) => (
