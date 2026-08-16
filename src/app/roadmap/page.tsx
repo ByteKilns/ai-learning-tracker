@@ -4,6 +4,8 @@ import { getAllProgress, getRegressionAdditions } from "@/lib/actions";
 import { PhaseTimeline } from "@/components/PhaseTimeline";
 import { RegressionSprintCard } from "@/components/RegressionSprintCard";
 
+export const dynamic = "force-dynamic";
+
 export default async function RoadmapPage() {
   const progress = await getAllProgress();
   const completedDays = new Set(
