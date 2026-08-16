@@ -2,7 +2,6 @@ import { notFound } from "next/navigation";
 import { days } from "@/data/days";
 import { getDayProgress } from "@/lib/actions";
 import { DayChecklist } from "@/components/DayChecklist";
-import { ResourceFlowCard } from "@/components/ResourceFlowCard";
 import { CompleteDayDialog } from "@/components/CompleteDayDialog";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -43,7 +42,6 @@ export default async function DayPage({
           <CompleteDayDialog day={day.day} />
         </CardContent>
       </Card>
-      <ResourceFlowCard day={day} />
     </div>
   );
 }
