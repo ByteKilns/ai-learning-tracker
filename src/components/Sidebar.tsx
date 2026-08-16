@@ -29,7 +29,7 @@ export function Sidebar() {
               className={cn(
                 "rounded-md px-3 py-2 hover:bg-accent",
                 pathname.startsWith(l.href)
-                  ? "bg-accent font-medium text-foreground"
+                  ? "bg-maroon font-medium text-maroon-foreground hover:bg-maroon"
                   : "text-muted-foreground",
               )}
             >
