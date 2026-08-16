@@ -1,13 +1,13 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { navLinks } from "@/lib/nav-links";
+import { activeNavLink } from "@/lib/nav-links";
 import { logout } from "@/lib/auth-actions";
 import { Button } from "@/components/ui/button";
 
 export function AppBar() {
   const pathname = usePathname();
-  const currentLink = navLinks.find((l) => pathname.startsWith(l.href));
+  const currentLink = activeNavLink(pathname);
   const pageName = currentLink?.label ?? "AI Engineering Tracker";
 
   return (

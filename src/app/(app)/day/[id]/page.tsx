@@ -31,6 +31,7 @@ export default async function DayPage({
     <div className="flex">
       <DayNavSidebar currentDay={day.day} />
       <div className="mx-auto max-w-3xl flex-1 space-y-6 p-6">
+        <h3 className="text-xl font-semibold">{day.phaseName}</h3>
         <Card>
           <CardHeader>
             <CardTitle>
@@ -39,7 +40,7 @@ export default async function DayPage({
           </CardHeader>
           <CardContent className="space-y-4">
             <div className="text-sm text-muted-foreground">
-              Phase {day.phaseNumber}: {day.phaseName} · Skill pillar: {day.skillPillar}
+              Skill pillar: {day.skillPillar}
             </div>
             <DayChecklist day={day} sectionsDone={sectionsDone} />
             <CompleteDayDialog day={day.day} />
