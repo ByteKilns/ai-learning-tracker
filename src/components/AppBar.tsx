@@ -12,7 +12,7 @@ export function AppBar() {
   const pageName = currentLink?.label ?? "AI Engineering Tracker";
 
   return (
-    <header className="sticky top-0 z-10 flex h-14 shrink-0 items-center justify-between border-b bg-background px-6">
+    <header className="sticky top-0 z-10 flex h-14 shrink-0 items-center justify-between border-b border-sidebar-border bg-sidebar px-6 text-sidebar-foreground">
       <span className="font-medium">{pageName}</span>
       <div className="flex items-center gap-2">
         <ThemeToggle />
