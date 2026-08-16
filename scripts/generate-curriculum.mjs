@@ -6,6 +6,14 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const raw = JSON.parse(
   readFileSync(path.join(__dirname, "raw-curriculum.json"), "utf-8"),
 );
+// Manual overlays kept separate from the Excel-derived data so a
+// re-run of the extraction script never wipes them out.
+const resourceLinks = JSON.parse(
+  readFileSync(path.join(__dirname, "resource-links.json"), "utf-8"),
+);
+const extraResources = JSON.parse(
+  readFileSync(path.join(__dirname, "extra-resources.json"), "utf-8"),
+);
 const dataDir = path.join(__dirname, "..", "src", "data");
 
 // Split a sentence-ish column into bullet items on ". " or "; " boundaries.
@@ -98,9 +106,16 @@ function writeModule(filename, varName, typeName, value) {
   console.log(`Wrote ${filename} (${value.length} entries)`);
 }
 
+const resources = [
+  ...raw.resources.map((r) =>
+    resourceLinks[r.resource] ? { ...r, link: resourceLinks[r.resource] } : r,
+  ),
+  ...extraResources,
+];
+
 writeModule("days.ts", "days", "Day", days);
 writeModule("phases.ts", "phases", "Phase", phases);
 writeModule("projects.ts", "projects", "Project", raw.projects);
 writeModule("studySystem.ts", "studySystem", "StudySystemEntry", raw.studySystem);
-writeModule("resources.ts", "resources", "Resource", raw.resources);
+writeModule("resources.ts", "resources", "Resource", resources);
 writeModule("regressionSprints.ts", "regressionSprints", "RegressionSprint", raw.regressionSprints);

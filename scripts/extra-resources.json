@@ -1,0 +1,16 @@
+[
+  {
+    "resource": "Neural Networks: Zero to Hero — Andrej Karpathy",
+    "role": "From-scratch deep learning walkthroughs",
+    "whenToUse": "Days 15–23",
+    "notes": "Builds backpropagation, MLPs, and a GPT from scratch in code; pairs well with the Deep Learning/PyTorch phase.",
+    "link": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ"
+  },
+  {
+    "resource": "The Illustrated Transformer — Jay Alammar",
+    "role": "Visual intuition for transformers",
+    "whenToUse": "Days 22–28",
+    "notes": "Diagram-driven walkthrough of attention and the transformer architecture.",
+    "link": "https://jalammar.github.io/illustrated-transformer/"
+  }
+]

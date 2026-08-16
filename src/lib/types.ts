@@ -51,6 +51,7 @@ export interface Resource {
   role: string;
   whenToUse: string;
   notes: string;
+  link?: string;
 }
 
 export interface RegressionSprint {
