@@ -3,6 +3,7 @@ import { days } from "@/data/days";
 import { getDayProgress } from "@/lib/actions";
 import { DayChecklist } from "@/components/DayChecklist";
 import { CompleteDayDialog } from "@/components/CompleteDayDialog";
+import { DayNavSidebar } from "@/components/DayNavSidebar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export const dynamic = "force-dynamic";
@@ -27,21 +28,24 @@ export default async function DayPage({
   };
 
   return (
-    <div className="mx-auto max-w-3xl space-y-6 p-6">
-      <Card>
-        <CardHeader>
-          <CardTitle>
-            Day {day.day} / 75 — {day.focus}
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-4">
-          <div className="text-sm text-muted-foreground">
-            Phase {day.phaseNumber}: {day.phaseName} · Skill pillar: {day.skillPillar}
-          </div>
-          <DayChecklist day={day} sectionsDone={sectionsDone} />
-          <CompleteDayDialog day={day.day} />
-        </CardContent>
-      </Card>
+    <div className="flex">
+      <DayNavSidebar currentDay={day.day} />
+      <div className="mx-auto max-w-3xl flex-1 space-y-6 p-6">
+        <Card>
+          <CardHeader>
+            <CardTitle>
+              Day {day.day} / 75 — {day.focus}
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <div className="text-sm text-muted-foreground">
+              Phase {day.phaseNumber}: {day.phaseName} · Skill pillar: {day.skillPillar}
+            </div>
+            <DayChecklist day={day} sectionsDone={sectionsDone} />
+            <CompleteDayDialog day={day.day} />
+          </CardContent>
+        </Card>
+      </div>
     </div>
   );
 }
