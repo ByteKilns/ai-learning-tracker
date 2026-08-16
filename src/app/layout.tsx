@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Karla, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const karla = Karla({
   variable: "--font-karla",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
